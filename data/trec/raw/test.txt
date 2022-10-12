@@ -1,0 +1,100 @@
+How far is it from Denver to Aspen ?	NUM
+What county is Modesto , California in ?	LOC
+Who was Galileo ?	HUM
+What is an atom ?	DESC
+When did Hawaii become a state ?	NUM
+How tall is the Sears Building ?	NUM
+George Bush purchased a small interest in which baseball team ?	HUM
+What is Australia 's national flower ?	ENTY
+Why does the moon turn orange ?	DESC
+What is autism ?	DESC
+What city had a world fair in 1900 ?	LOC
+What person 's head is on a dime ?	HUM
+What is the average weight of a Yellow Labrador ?	NUM
+Who was the first man to fly across the Pacific Ocean ?	HUM
+When did Idaho become a state ?	NUM
+What is the life expectancy for crickets ?	NUM
+What metal has the highest melting point ?	ENTY
+Who developed the vaccination against polio ?	HUM
+What is epilepsy ?	DESC
+What year did the Titanic sink ?	NUM
+Who was the first American to walk in space ?	HUM
+What is a biosphere ?	DESC
+What river in the US is known as the Big Muddy ?	LOC
+What is bipolar disorder ?	DESC
+What is cholesterol ?	DESC
+Who developed the Macintosh computer ?	HUM
+What is caffeine ?	DESC
+What imaginary line is halfway between the North and South Poles ?	LOC
+Where is John Wayne airport ?	LOC
+What hemisphere is the Philippines in ?	LOC
+What is the average speed of the horses at the Kentucky Derby ?	NUM
+Where are the Rocky Mountains ?	LOC
+What are invertebrates ?	DESC
+What is the temperature at the center of the earth ?	NUM
+When did John F. Kennedy get elected as President ?	NUM
+How old was Elvis Presley when he died ?	NUM
+Where is the Orinoco River ?	LOC
+How far is the service line from the net in tennis ?	NUM
+How much fiber should you have per day ?	NUM
+How many Great Lakes are there ?	NUM
+Material called linen is made from what plant ?	ENTY
+What is Teflon ?	DESC
+What is amitriptyline ?	DESC
+What is a shaman ?	DESC
+What is the proper name for a female walrus ?	ENTY
+What is a group of turkeys called ?	ENTY
+How long did Rip Van Winkle sleep ?	NUM
+What are triglycerides ?	DESC
+How many liters in a gallon ?	NUM
+What is the name of the chocolate company in San Francisco ?	HUM
+What are amphibians ?	DESC
+Who discovered x-rays ?	HUM
+Which comedian 's signature line is `` Can we talk '' ?	HUM
+What is fibromyalgia ?	DESC
+What is done with worn or outdated flags ?	DESC
+What does cc in engines mean ?	DESC
+When did Elvis Presley die ?	NUM
+What is the capital of Yugoslavia ?	LOC
+Where is Milan ?	LOC
+What is the speed hummingbirds fly ?	NUM
+What is the oldest city in the United States ?	LOC
+What was W.C. Fields ' real name ?	HUM
+What river flows between Fargo , North Dakota and Moorhead , Minnesota ?	LOC
+What do bats eat ?	ENTY
+What state did the Battle of Bighorn take place in ?	LOC
+Who was Abraham Lincoln ?	HUM
+What do you call a newborn kangaroo ?	ENTY
+What are spider veins ?	DESC
+What day and month did John Lennon die ?	NUM
+What strait separates North America from Asia ?	LOC
+What is the population of Seattle ?	NUM
+How much was a ticket for the Titanic ?	NUM
+What is the largest city in the world ?	LOC
+What American composer wrote the music for `` West Side Story '' ?	HUM
+Where is the Mall of the America ?	LOC
+What is the pH scale ?	DESC
+What type of currency is used in Australia ?	ENTY
+How tall is the Gateway Arch in St. Louis , MO ?	NUM
+How much does the human adult female brain weigh ?	NUM
+Who was the first governor of Alaska ?	HUM
+What is a prism ?	DESC
+When was the first liver transplant ?	NUM
+Who was elected president of South Africa in 1994 ?	HUM
+What is the population of China ?	NUM
+When was Rosa Parks born ?	NUM
+Why is a ladybug helpful ?	DESC
+What is amoxicillin ?	DESC
+Who was the first female United States Representative ?	HUM
+What are xerophytes ?	DESC
+What country did Ponce de Leon come from ?	LOC
+The U.S. Department of Treasury first issued paper currency for the U.S. during which war ?	ENTY
+What is desktop publishing ?	DESC
+What is the temperature of the sun 's surface ?	NUM
+What year did Canada join the United Nations ?	NUM
+What is the oldest university in the US ?	HUM
+Where is Prince Edward Island ?	LOC
+Mercury , what year was it discovered ?	NUM
+What is cryogenics ?	DESC
+What are coral reefs ?	DESC
+What is the longest major league baseball-winning streak ?	ENTY
