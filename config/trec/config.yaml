@@ -1,9 +1,19 @@
+defaults:  
+  - _self_  
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled  
+  
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
+
 # Data
 dataset: 'trec'
-root_data_dir: 'C:\Users\FPCC\Desktop\graphNN\data\trec'
+root_data_dir: '${hydra:runtime.cwd}\data\trec'
 val_split_ratio: 0.2 # validation set split ratio (default: 0.2)
 pretrained_word_emb_name: '840B'
-out_dir: 'C:\Users\FPCC\Desktop\graphNNout\trec\graphsage_bi_fuse_dependency_ckpt'
+out_dir: '${hydra:runtime.cwd}\..\..\graphNNout\trec\graphsage_bi_fuse_dependency_ckpt'
 
 
 # Graph construction

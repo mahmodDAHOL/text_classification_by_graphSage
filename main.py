@@ -1,5 +1,6 @@
 import datetime
 import os
+from pathlib import Path
 import time
 
 import hydra
@@ -67,9 +68,6 @@ class TextClassifier(nn.Module):
 
         heads = [config.gat_num_heads] * \
             (config.gnn_num_layers - 1) + [config.gat_num_out_heads]
-        print(f"np.array(heads).shape = {np.array(heads).shape}")
-        print(f"heads = {heads}")
-        print(f"heads[0] = {heads[0]}")
         self.gnn = GraphSAGE(config.gnn_num_layers,
                              config.num_hidden,
                              config.num_hidden,
@@ -310,10 +308,7 @@ class ModelHandler:
 
 @hydra.main(version_base=None, config_path="config/trec", config_name="config")
 def main(config: DictConfig):
-    print(OmegaConf.to_yaml(config))
 
-    # config = OmegaConf.to_yaml(cfg)
-    print(config)
     OmegaConf.set_struct(config, False)
     # run model
     np.random.seed(config.seed)
@@ -324,7 +319,7 @@ def main(config: DictConfig):
     print('\n' + config.out_dir)
 
     runner = ModelHandler(config)
-    runner.dataset.train[10].show_graph(r"C:\Users\FPCC\Desktop\graphNN\figure.html")
+    item = runner.dataset.train[0]
     breakpoint()
     t0 = time.time()
 

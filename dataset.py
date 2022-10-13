@@ -3,8 +3,8 @@ import os
 import warnings
 from copy import deepcopy
 from multiprocessing import Pool
+from pathlib import Path
 from typing import Union
-from pyvis.network import Network
 
 import numpy as np
 import stanfordcorenlp
@@ -26,6 +26,7 @@ from graph4nlp.pytorch.modules.utils.generic_utils import LabelModel
 from graph4nlp.pytorch.modules.utils.padding_utils import pad_2d_vals_no_size
 from graph4nlp.pytorch.modules.utils.vocab_utils import VocabModel
 from nltk.tokenize import word_tokenize
+from pyvis.network import Network
 
 
 class DataItem(object):
@@ -34,24 +35,22 @@ class DataItem(object):
         self.tokenizer = tokenizer
         self.graph = None
         pass
-    
-    def show_graph(self, output_filename_path: str) -> Network:
-        graph = self.graph.nodes[:][1]._graph
-        nodes = graph.nodes
 
+    def save_dataitem_as_graph(self, saved_path: Path) -> Network:
+        """
+        this method takes full path of the html file that will contain graph 
+        representation of text. 
+        """
         edges = self.graph.edges()
-        tokens = []
-        for i, _ in enumerate(nodes):
-            tokens.append(nodes[i][1].getitem('token'))
-            if i == len(nodes) - 1:
-                break
-        nodes_ids = [id for id in range(graph.get_node_num())]
+        tokens = (self.graph.node_attributes[i]["token"] for i in range(self.graph.get_node_num()))
+        nodes_ids = [id for id in range(self.graph.get_node_num())]
         nodes_titls = [token for token in tokens]
 
         g = Network()
         g.add_nodes(nodes_ids, title=nodes_titls)
         g.add_edges(edges)
-        g.show(output_filename_path)
+        os.makedirs(saved_path.parents[0], exist_ok=True)
+        g.write_html(str(saved_path))
         return g
 
     @abc.abstractmethod
@@ -655,7 +654,7 @@ class Dataset(torch.utils.data.Dataset):
 
         os.makedirs(self.processed_dir, exist_ok=True)
 
-        self.read_raw_data() # this for convert txt data to DataItems
+        self.read_raw_data()  # this for convert txt data to DataItems
 
         if self.for_inference:
             self.test = self.build_topology(self.test)
